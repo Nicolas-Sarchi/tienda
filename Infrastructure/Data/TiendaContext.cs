@@ -24,4 +24,6 @@ public class TiendaContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
 
+
+
 }

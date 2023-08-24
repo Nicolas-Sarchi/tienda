@@ -21,6 +21,11 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
             .IsRequired()
             .HasColumnType("Date");    
 
+        builder.
+        HasOne(p => p.TipoPersona)
+        .WithMany(tp => tp.Personas)
+        .HasForeignKey(p => p.IdTipoPerFk);
+        
         builder
         .HasMany(p => p.Productos)
         .WithMany(p => p.Personas)

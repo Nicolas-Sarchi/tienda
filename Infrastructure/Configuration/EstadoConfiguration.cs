@@ -11,8 +11,6 @@ public class EstadoConfiguration : IEntityTypeConfiguration<Estado>
 
         builder.Property(e => e.Id);
         
- 
-
         builder.Property(e => e.NombreEstado)
             .IsRequired()
             .HasMaxLength(50);

@@ -1,0 +1,15 @@
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\bin\Debug\net7.0\Core.dll
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\bin\Debug\net7.0\Core.pdb
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+C:\Users\Nicolas\Desktop\tienda\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
