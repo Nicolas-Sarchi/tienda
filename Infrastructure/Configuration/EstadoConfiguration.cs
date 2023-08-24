@@ -9,7 +9,6 @@ public class EstadoConfiguration : IEntityTypeConfiguration<Estado>
     {
         builder.ToTable("estado");
 
-        builder.Property(e => e.Id);
         
         builder.Property(e => e.NombreEstado)
             .IsRequired()

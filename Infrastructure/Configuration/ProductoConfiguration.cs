@@ -17,6 +17,7 @@ public class ProductoConfiguration : IEntityTypeConfiguration<Producto>
         builder.Property(p => p.StockMin)
             .IsRequired()
             .HasColumnType("int");
+            
 
     }
 }
