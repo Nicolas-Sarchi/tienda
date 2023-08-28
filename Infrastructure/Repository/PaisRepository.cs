@@ -30,4 +30,6 @@ public class PaisRepository : GenericRepo<Pais>, IPais
         .Include(p => p.Estados)
         .FirstOrDefaultAsync(p => p.Id == id);
     }
+
+    
 }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigureCors();
-// Add services to the container.
+builder.Services.AddAppServices();
 
 builder.Services.AddControllers();
 
@@ -13,6 +13,12 @@ builder.Services.AddDbContext<TiendaContext>(optionsBuilder =>
     string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+});
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

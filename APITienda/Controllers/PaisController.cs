@@ -1,17 +1,17 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace APITienda.Controllers;
 
 public class PaisController : BaseApiController
 {
-    private readonly TiendaContext _context;
+    private IUnitOfWork unitofwork;
 
-    public PaisController(TiendaContext context)
+    public PaisController(IUnitOfWork unitOfWork)
     {
-        _context = context;
+        this.unitofwork = unitOfWork;
     }
 
     [HttpGet]
@@ -19,8 +19,30 @@ public class PaisController : BaseApiController
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<Pais>>> Get()
     {
-        var varName = await _context.Paises.ToListAsync();
-        return Ok(varName);
+        var paises = await unitofwork.Paises.GetAllAsync();
+        return Ok(paises);
+    }
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<Pais>> Get(int id)
+    {
+        var pais = await unitofwork.Paises.GetByIdAsync(id);
+        return Ok(pais);
+    }
+
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<Pais>> Post(Pais pais)
+    {
+        unitofwork.Paises.Add(pais);
+        await unitofwork.SaveAsync();
+        if (pais == null){
+            return BadRequest();
+        }
+        return CreatedAtAction(nameof(Post), new { id = pais.Id }, pais);
     }
 
 }

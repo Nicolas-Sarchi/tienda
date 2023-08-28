@@ -1,3 +1,6 @@
+using Core.Interfaces;
+using Infrastructure.UnitOfWork;
+
 namespace APITienda.Extensions;
 
 public static class ApplicationServerExtension
@@ -11,4 +14,9 @@ public static class ApplicationServerExtension
         .AllowAnyHeader());
         
     });
+
+    public static void AddAppServices(this IServiceCollection services)
+    {
+        services.AddScoped <IUnitOfWork, UnitOfWork>();
+    }
 }
