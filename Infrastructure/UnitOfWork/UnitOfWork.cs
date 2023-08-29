@@ -11,6 +11,7 @@ public class UnitOfWork : IUnitOfWork
 {
     private readonly TiendaContext context;
     private PaisRepository _paises;
+    private EstadoRepository _estados;
 
 
     public UnitOfWork(TiendaContext _context)
@@ -26,6 +27,19 @@ public class UnitOfWork : IUnitOfWork
                 _paises = new PaisRepository(context);
             }
             return _paises;
+        }
+
+    }
+
+    public IEstado Estados
+    {
+        get
+        {
+            if (_estados == null)
+            {
+                _estados = new EstadoRepository(context);
+            }
+            return _estados;
         }
 
     }
