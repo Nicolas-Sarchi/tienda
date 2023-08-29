@@ -14,10 +14,10 @@ builder.Services.AddDbContext<TiendaContext>(optionsBuilder =>
     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
-builder.Services.AddControllers().AddJsonOptions(options =>
-{
-    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-});
+// builder.Services.AddControllers().AddJsonOptions(options =>
+// {
+//     options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+// });
 
 
 builder.Services.AddEndpointsApiExplorer();
