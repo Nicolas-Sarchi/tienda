@@ -7,7 +7,7 @@ public class Persona : BaseEntity
     public DateOnly FechaNac { get; set;}
     public int IdTipoPerFk { get; set;}
     public TipoPersona TipoPersona { get; set; }
-    public ICollection<Producto> Productos { get; set; } = new HashSet<Producto>();
+    public ICollection<Producto> Productos { get; set; }
     public ICollection<ProductoPersona> ProductosPersonas { get; set; }
 
 }

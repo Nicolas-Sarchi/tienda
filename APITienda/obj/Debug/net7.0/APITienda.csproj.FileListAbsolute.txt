@@ -188,3 +188,5 @@ C:\Users\APT01-050\Desktop\tienda\APITienda\obj\Debug\net7.0\refint\APITienda.dl
 C:\Users\APT01-050\Desktop\tienda\APITienda\obj\Debug\net7.0\APITienda.pdb
 C:\Users\APT01-050\Desktop\tienda\APITienda\obj\Debug\net7.0\APITienda.genruntimeconfig.cache
 C:\Users\APT01-050\Desktop\tienda\APITienda\obj\Debug\net7.0\ref\APITienda.dll
+C:\Users\Nicolas\Desktop\tienda\APITienda\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Nicolas\Desktop\tienda\APITienda\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

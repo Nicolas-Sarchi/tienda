@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APITienda.Controllers;
 
-public class EstadoController
+public class EstadoController : BaseApiController
 {
     private IUnitOfWork unitofwork;
     private readonly IMapper mapper;

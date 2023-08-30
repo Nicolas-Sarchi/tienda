@@ -14,6 +14,7 @@ public static class ApplicationServerExtension
         .AllowAnyHeader());
         
     });
+    
 
     public static void AddAppServices(this IServiceCollection services)
     {
